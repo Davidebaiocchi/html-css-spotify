@@ -96,6 +96,7 @@ body {
 .main-section {
     padding-top: 100px;
     margin-left: 40px;
+    padding-bottom: 50px;
 }
 
 .nav-right-section ul {
@@ -120,15 +121,17 @@ h2 {
     margin: 20px auto;
     color: white;
     font-size: 34px;
-
-}
-.row {
-    display: flex;
 }
 
+.card {
+   float: left;
+   width: calc(100% / 6.5);
+   margin-right: 20px;
+}
 
 .row img {
-    height: 250px;
+    width: 100%;
+    padding-top: 10px;
 }
 
 .description {
