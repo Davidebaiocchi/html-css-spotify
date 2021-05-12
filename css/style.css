@@ -52,6 +52,12 @@ body {
     align-self: center;
 }
 
+.overflox-playlist {
+    overflow-y: auto;
+    height: 100%;
+    
+}
+
 .button {
     color: grey;
     padding-left: 20px;
@@ -127,6 +133,7 @@ h2 {
    float: left;
    width: calc(100% / 6.5);
    margin-right: 20px;
+   min-height: 300px;
 }
 
 .row img {
