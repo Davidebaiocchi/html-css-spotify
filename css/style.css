@@ -1,12 +1,35 @@
+/* COMMONS COMMONS COMMONS COMMONS COMMONS COMMONS COMMONS COMMONS COMMONS COMMONS */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+
+/* SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION */
+.section-main {
+    display: flex;
+}
+
 .left-section {
-    height: 90%;
-    width: 30%;
+    height: 92vh;
+    width: 15vw;
     background-color: black;
 }
+
+.right-section {
+    height: 92vh;
+    width: 85vw;
+    background-color: rgb(20, 25, 34);
+}
+
+.bottom-section {
+    background-color: rgb(40, 40, 40);
+    height: 70px;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
 
