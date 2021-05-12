@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    overflow: hidden;
+}
+
 .white {
     color: white;
 }
@@ -58,21 +62,18 @@
 }
 
 
-
-
 /* sezione di destra  */
 .right-section-overflow {
-    height: 92vh;
+    height: 900px;
     width: 88vw;
     background-color: rgb(20, 25, 34);
+    overflow-y: scroll;
 }
 
 .top-right-section-fixed{
     position: fixed;
-    left:12vw;
-    top: 0;
     background-color: rgb(8, 11, 18);
-    width: 88vw;
+    width: 89%;
     height: 80px;
 }
 
@@ -84,24 +85,30 @@
     float: right;
     position: relative;
     top: 15px;
+    margin-right: 25px;
+    margin-top: 5px;
 }
 
-.nav-right-section a {
-    text-transform: uppercase;
-}
-
-.nav-right-section ul:first-child {
-    border-bottom: 3px solid rgb(0, 255, 0);
+.main-section {
+    padding-top: 100px;
 }
 
 .nav-right-section ul {
     list-style: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-right-section li {
-    display: inline-block;
+    margin: 0 10px;
 } 
 
+.nav-right-section a {
+    color: grey;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
 
 
