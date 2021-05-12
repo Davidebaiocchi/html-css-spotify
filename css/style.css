@@ -13,6 +13,10 @@ body {
     color: white;
 }
 
+.grey {
+    color: grey;
+}
+
 .section-flex {
     display: flex;
 }
@@ -91,6 +95,7 @@ body {
 
 .main-section {
     padding-top: 100px;
+    margin-left: 40px;
 }
 
 .nav-right-section ul {
@@ -110,9 +115,25 @@ body {
     text-decoration: none;
 }
 
+h2 {
+    padding-top: 30px;
+    margin: 20px auto;
+    color: white;
+    font-size: 34px;
+
+}
+.row {
+    display: flex;
+}
 
 
+.row img {
+    height: 250px;
+}
 
+.description {
+    text-align: center;
+}
 
 
 
