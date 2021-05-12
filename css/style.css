@@ -5,24 +5,113 @@
     padding: 0;
 }
 
+.white {
+    color: white;
+}
 
-/* SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION */
-.section-main {
+.section-flex {
     display: flex;
 }
 
-.left-section {
-    height: 92vh;
-    width: 15vw;
-    background-color: black;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.right-section {
+/* SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION */
+
+
+/* sezione di sinistra */
+.left-section {
     height: 92vh;
-    width: 85vw;
+    width: 12vw;
+    background-color: black;
+    overflow:hidden;
+}
+
+.logo {
+    width: 70%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.button-home {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+}
+
+.button {
+    color: grey;
+    padding-left: 20px;
+    padding-bottom: 20px;  
+    cursor: pointer;
+}
+
+.button-installa-app {
+    display: flex;
+    align-items: flex-end;
+    height: 30%;
+}
+
+
+
+
+/* sezione di destra  */
+.right-section-overflow {
+    height: 92vh;
+    width: 88vw;
     background-color: rgb(20, 25, 34);
 }
 
+.top-right-section-fixed{
+    position: fixed;
+    left:12vw;
+    top: 0;
+    background-color: rgb(8, 11, 18);
+    width: 88vw;
+    height: 80px;
+}
+
+.button-upgrade {
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 210px;
+    padding: 5px 15px;    
+    float: right;
+    position: relative;
+    top: 15px;
+}
+
+.nav-right-section a {
+    text-transform: uppercase;
+}
+
+.nav-right-section ul:first-child {
+    border-bottom: 3px solid rgb(0, 255, 0);
+}
+
+.nav-right-section ul {
+    list-style: none;
+}
+
+.nav-right-section li {
+    display: inline-block;
+} 
+
+
+
+
+
+
+
+
+
+
+/* sezione bassa */
 .bottom-section {
     background-color: rgb(40, 40, 40);
     height: 80px;

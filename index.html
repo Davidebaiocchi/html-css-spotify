@@ -6,27 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
-        <div class="section-main">
+        <div class="section-flex">
             <div class="left-section">
-                
+                <div class="logo">
+                    <img src="img/logo.svg" alt="">
+                </div> 
+                <div style="border-left: 3px solid rgb(96, 211, 2); padding-top: 15px;" class="white button-home"><i class="fas fa-home"> Home</i></div>
+                <div class="button buttom-search"><i class="fas fa-search"> Cerca</i></div>
+                <div class="button button-your-libr"><i class="fas fa-compact-disc"></i> La tua libreria</div>
+                <span class="white button-home" style="font-size: 14px;">PLAYLIST</span>
+                <div style="padding-top: 10px;" class="button button-add-playlist"><i style="font-size: 35px; vertical-align: -8px;" class="far fa-plus-square"></i> <span style="font-size: 19px;">Crea Playlist</span> </div>
+                <div class="playlist">
+                    <div class="overflox-playlist">
+                        <ul>
+                            <li class="button">Nome Playlist</li>
+                            <li class="button">Nome Playlist</li>
+                            <li class="button">Nome Playlist</li>
+                            <li class="button">Nome Playlist</li>
+                            <li class="button">Nome Playlist</li>
+                            <li class="button">Nome Playlist</li>
+                            <li class="button">Nome Playlist</li>                                              
+                        </ul>
+                    </div>
+                </div>
+                <div class="button button-installa-app"><i class="fas fa-arrow-circle-down"> Installa App</i></div>
+                <hr color="grey" style="margin: 0 20px;">
+                <div class="button-user"><i style="font-size: 20px; padding-top: 20px;" class="button-home white fas fa-user-circle"> John Doe</i></div>
             </div>
-
+            
             <div class="right-section-overflow">
-                <div class="top-right-section-fixed">
-                    <div class="button-upgrade"></div>
+                <div class="clearfix top-right-section-fixed">
+                    <div style="text-transform: uppercase;" class="white button-upgrade">Effettua L'upgrade</div>
                 </div>
 
                 <div class="nav-right-section">
                     <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                        <li><a href="#">in evidenza</a></li>
+                        <li><a href="#">podcast</a></li>
+                        <li><a href="#">classifiche</a></li>
+                        <li><a href="#">generi e mood</a></li>
+                        <li><a href="#">nuove uscite</a></li>
+                        <li><a href="#">scopri</a></li>
                     </ul>
                 </div>
 
