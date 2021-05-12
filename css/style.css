@@ -36,6 +36,7 @@ body {
     width: 12vw;
     background-color: black;
     overflow:hidden;
+    padding-bottom: 20px;
 }
 
 .logo {
@@ -54,8 +55,6 @@ body {
 
 .overflox-playlist {
     overflow-y: auto;
-    height: 100%;
-    
 }
 
 .button {
@@ -63,6 +62,10 @@ body {
     padding-left: 20px;
     padding-bottom: 20px;  
     cursor: pointer;
+}
+
+.button:hover {
+    color: white;
 }
 
 .button-installa-app {
@@ -97,6 +100,7 @@ body {
     top: 15px;
     margin-right: 25px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .main-section {
@@ -122,6 +126,10 @@ body {
     text-decoration: none;
 }
 
+.nav-right-section a:hover {
+    color: white;
+}
+
 h2 {
     padding-top: 30px;
     margin: 20px auto;
@@ -139,15 +147,13 @@ h2 {
 .row img {
     width: 100%;
     padding-top: 10px;
+    cursor: pointer;
 }
 
 .description {
     text-align: center;
+    cursor: pointer;
 }
-
-
-
-
 
 /* sezione bassa */
 .bottom-section {
@@ -159,4 +165,31 @@ h2 {
     bottom: 0;
 }
 
+.column {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding-top: 10px;
+}
 
+.column img {
+    height: 60px;
+}
+
+.description-2 {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.fa-heart {
+    margin-left: 40px;
+}
+
+.fa-folder {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.icon-hover:hover {
+    color: white;
+}
