@@ -11,6 +11,7 @@ body {
 
 .white {
     color: white;
+    cursor: pointer;
 }
 
 .grey {
@@ -27,6 +28,13 @@ body {
     clear: both;
 }
 
+.in-bl {
+    display: inline-block;
+}
+
+.icon-hover:hover {
+    color: white;
+}
 /* SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION */
 
 
@@ -165,15 +173,17 @@ h2 {
     bottom: 0;
 }
 
-.column {
+.row-footer {
     display: flex;
     align-items: center;
     margin-left: 10px;
     padding-top: 10px;
+    justify-content: space-between;
 }
 
-.column img {
+.row-footer img {
     height: 60px;
+    vertical-align: -25px;
 }
 
 .description-2 {
@@ -183,13 +193,89 @@ h2 {
 
 .fa-heart {
     margin-left: 40px;
+    cursor: pointer;
 }
 
 .fa-folder {
     margin-left: 10px;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
-.icon-hover:hover {
-    color: white;
+.central-section-footer {
+    width: 33%;
+    text-align: center;
+}
+
+.central-section-footer i {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.barra-canzone {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.barra-centrale-footer {
+    width: 80%;
+    height: 4px;
+    display: inline-block;
+    background-color: grey;
+    position: relative;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.barra-canzone .barra-verde {
+    width: 15%;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    height: 4px;
+    margin-bottom: 11px;
+    margin-right: 430px;    
+    cursor: pointer;
+    border-radius: 15px;
+
+}
+
+.barra-canzone .barra-verde:hover {
+    background-color: rgb(0, 255, 0);
+}
+
+.numero {
+    position: relative;
+    bottom: 7px;
+}
+
+.third-section {
+    width: 20%;
+    text-align: right;
+}
+
+.barra-destra-footer {
+    width: 20%;
+    height: 4px;
+    display: inline-block;
+    background-color: grey;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    top: 6px;
+}
+
+.barra-bianca {
+    width: 25%;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    height: 4px;
+    margin-bottom: 11px;
+    margin-right: 430px;    
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.fa-desktop {
+    margin: 0 10px;
 }
