@@ -35,15 +35,27 @@ body {
 .icon-hover:hover {
     color: white;
 }
+
+.pt30-m20{
+    padding-top: 30px;
+    margin: 20px auto;
+}
+
+.p-t-20 {
+    padding-top: 30px;
+}
+
+
 /* SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION */
+
+
 
 
 /* sezione di sinistra */
 .left-section {
-    height: 92vh;
-    width: 12vw;
+    height: 96vh;
+    width: 300px;
     background-color: black;
-    overflow:hidden;
     padding-bottom: 20px;
 }
 
@@ -61,10 +73,6 @@ body {
     align-self: center;
 }
 
-.overflox-playlist {
-    overflow-y: auto;
-}
-
 .button {
     color: grey;
     padding-left: 20px;
@@ -76,39 +84,87 @@ body {
     color: white;
 }
 
-.button-installa-app {
-    display: flex;
-    align-items: flex-end;
-    height: 30%;
+.home {
+    border-left: 3px solid rgb(96, 211, 2);
+    padding-top: 15px;
 }
 
+.button-add-playlist {
+    padding-top: 10px;
+}
+
+.fa-plus-square {
+    font-size: 35px;
+    vertical-align: -8px;
+}
+
+.add-playlist {
+    font-size: 19px;
+}
+
+.button-user {
+    font-size: 20px; 
+    padding-top: 20px;
+}
+
+.button-installa-app {
+    border-bottom: 3px solid grey;  
+    margin: 0 10px;
+}
+
+.evidenza {
+    border-bottom: 2px solid rgb(0, 255, 0);
+}
+
+.upper {
+    height: calc(100% - 90px);
+}
+
+.lower {
+    height: 90px;
+    position: relative;
+    bottom: 30px;
+}
+
+.playlist{
+    overflow:hidden;
+    height:80%;
+}
+
+.temp-height{
+    overflow-y: auto;
+    height:50%;
+}
 
 /* sezione di destra  */
 .right-section-overflow {
     height: 900px;
-    width: 88vw;
+    width: calc(100% - 300px);
     background-color: rgb(20, 25, 34);
     overflow-y: scroll;
 }
 
 .top-right-section-fixed{
     position: fixed;
+    top: 0;
+    right: 0;
     background-color: rgb(8, 11, 18);
-    width: 89%;
+    width: calc(100% - 300px);
     height: 80px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .button-upgrade {
     border: 1px solid white;
-    border-radius: 15px;
-    width: 210px;
-    padding: 5px 15px;    
-    float: right;
-    position: relative;
-    top: 15px;
-    margin-right: 25px;
-    margin-top: 5px;
+    border-radius: 30px;
+    padding: 5px 15px;   
+    height: 50%;
+    display: flex;
+    padding-top: 10px;
     cursor: pointer;
+    margin-top: 20px;
+    margin-right: 5px;
 }
 
 .main-section {
@@ -139,21 +195,22 @@ body {
 }
 
 h2 {
-    padding-top: 30px;
-    margin: 20px auto;
     color: white;
     font-size: 34px;
 }
 
 .card {
    float: left;
-   width: calc(100% / 6.5);
-   margin-right: 20px;
+   width: calc(100% / 6);
    min-height: 300px;
 }
 
+.row {
+    height: 33%;
+}
+
 .row img {
-    width: 100%;
+    width: 90%;
     padding-top: 10px;
     cursor: pointer;
 }
@@ -162,6 +219,15 @@ h2 {
     text-align: center;
     cursor: pointer;
 }
+
+.central-section-footer span {
+    font-size: 14px;
+}
+
+
+
+
+
 
 /* sezione bassa */
 .bottom-section {
@@ -279,3 +345,63 @@ h2 {
 .fa-desktop {
     margin: 0 10px;
 }
+
+
+
+/*  RESPOSIVE */
+
+/* Tablet */
+@media all and (min-width: 737px) and (max-width: 1279px) {
+
+    .left-section {
+        width: 230px;
+    }
+
+    .right-section-overflow {
+        width: calc(100% - 230px);
+    }
+    
+    .top-right-section-fixed{
+        width: calc(100% - 230px);
+
+    }
+
+    .nav-main a {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .nav-main {
+        width: 100%; 
+    } 
+ 
+    .nav-main li {
+        font-size: 14px;
+    }
+ 
+    .card {
+     float: left;
+     width: calc(100% / 4);
+     min-height: 300px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* Smartphone di grandi dimensioni*/
+@media all and (min-width: 481px) and (max-width: 736px) {
+    
+}
+
+/* Smartphone di piccole dimensioni*/
+@media all and (max-width: 480px) {
+
+} 

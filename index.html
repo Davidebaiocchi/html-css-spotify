@@ -12,17 +12,25 @@
     <div class="container">
         <div class="section-flex">
             <div class="left-section">
-                <div class="logo">
-                    <img src="img/logo.svg" alt="">
-                </div> 
-                <div style="border-left: 3px solid rgb(96, 211, 2); padding-top: 15px;" class="white button-home"><i class="fas fa-home"> Home</i></div>
-                <div class="button buttom-search"><i class="fas fa-search"> Cerca</i></div>
-                <div class="button button-your-libr"><i class="fas fa-compact-disc"></i> La tua libreria</div>
-                <span class="white button-home" style="font-size: 14px;">PLAYLIST</span>
-                <div style="padding-top: 10px;" class="button button-add-playlist"><i style="font-size: 35px; vertical-align: -8px;" class="far fa-plus-square"></i> <span style="font-size: 19px;">Crea Playlist</span> </div>
-                <div class="playlist">
-                    <div class="overflox-playlist">
-                        <ul>
+
+                <div class="upper">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="">
+                    </div> 
+                    <!-- sidebar menu -->
+                    <div class="upper-menu">
+                        <div class="home white button-home"><i class="fas fa-home"> Home</i></div>
+                        <div class="button buttom-search"><i class="fas fa-search"> Cerca</i></div>
+                        <div class="button button-your-libr"><i class="fas fa-compact-disc"></i> La tua libreria</div>
+                    </div>
+                    <!-- playlist menu -->
+                    <div class="playlist">
+                        <div class="first-menu-playlist">
+                            <span class="white button-home" style="font-size: 14px;">PLAYLIST</span>
+                            <div class="button button-add-playlist"><i class="far fa-plus-square"></i> <span class="add-playlist">Crea Playlist</span></div>
+                        </div>
+                        
+                        <ul class="temp-height">
                             <li class="button">Nome Playlist</li>
                             <li class="button">Nome Playlist</li>
                             <li class="button">Nome Playlist</li>
@@ -30,23 +38,28 @@
                             <li class="button">Nome Playlist</li>
                             <li class="button">Nome Playlist</li>
                             <li class="button">Nome Playlist</li>                                              
-                        </ul>
+                        </ul>                        
                     </div>
                 </div>
-                <div class="button button-installa-app"><i class="fas fa-arrow-circle-down"> Installa App</i></div>
-                <hr color="grey" style="margin: 0 20px;">
-                <div class="button-user"><i style="font-size: 20px; padding-top: 20px;" class="button-home white fas fa-user-circle"> John Doe</i></div>
+
+                <div class="lower">
+                    <div class="button button-installa-app"><i class="fas fa-arrow-circle-down"> Installa App</i></div>
+                    <div class="button-user"><i class="button-home white fas fa-user-circle"> John Doe</i></div>
+                </div>
+
             </div>
             
             <div class="right-section-overflow">
-                <div class="clearfix top-right-section-fixed">
-                    <div style="text-transform: uppercase;" class="white button-upgrade">Effettua L'upgrade</div>
+                <div class="top-right-section-fixed">
+                    <div></div>
+                    <div></div>
+                    <div class="white button-upgrade">EFFETTUA L' UPGRADE</div>
                 </div>
 
                 <div class="main-section">            
                     <div class="nav-right-section">
-                        <ul>
-                            <li style="border-bottom: 2px solid rgb(0, 255, 0);"><a href="#">in evidenza</a></li>
+                        <ul class="nav-main">
+                            <li class="evidenza"><a href="#">in evidenza</a></li>
                             <li><a href="#">podcast</a></li>
                             <li><a href="#">classifiche</a></li>
                             <li><a href="#">generi e mood</a></li>
@@ -56,7 +69,7 @@
                     </div>
 
                     <div class="album-section">
-                        <h2>Recently played</h2>
+                        <h2 class="pt30-m20">Recently played</h2>
                         <div class="clearfix row">
                             <div class="card">
                                 <img src="img/metal_lifting.jpg" alt="">
@@ -69,7 +82,7 @@
                                 <img src="img/stranger.jpeg" alt="">
                                 <div class="description">
                                     <h3 class="white">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
-                                    <p class="grey">Kyle Dixon % Micheal Stein</p>
+                                    <p class="grey">Kyle Dixon & Micheal Stein</p>
                                 </div>                               
                             </div>
                             <div class="card">
@@ -102,7 +115,7 @@
                             </div>
                         </div>
 
-                        <h2>Creato per John Doe</h2>
+                        <h2 class="p-t-20">Creato per John Doe</h2>
                         <p style="padding-bottom: 10px;" class="grey">Più ascolti, più assicurati saranno i suggerimenti.</p>
                         <div class="clearfix row">
                             <div class="card">
@@ -114,7 +127,7 @@
                             <div class="card">
                                 <img src="img/mixdaily.jpeg" alt="">
                                 <div class="description">
-                                    <h3 class="white">Daily Mix 1)</h3>
+                                    <h3 class="white">Daily Mix 1</h3>
                                 </div>                               
                             </div>                             
                         </div>
@@ -158,11 +171,11 @@
                     <i class="white fas fa-step-forward"></i>
                     <i class="white fas fa-redo"></i>
                     <div class="barra-canzone">
-                        <span style="font-size: 14px;" class="numero white">0:25</span>
+                        <span class="numero white">0:25</span>
                         <span class="barra-centrale-footer">
                             <span class=" barra-verde"></span>
                         </span>
-                        <span style="font-size: 14px;" class="numero white">4:35</span>
+                        <span class="numero white">4:35</span>
                     </div>
 
                 </div>
