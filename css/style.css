@@ -173,6 +173,10 @@ body {
     margin-right: 5px;
 }
 
+.button-upgrade:hover {
+    transform: scale(1.1);
+}
+
 .main-section {
     padding-top: 100px;
     margin-left: 40px;
@@ -315,11 +319,12 @@ h2 {
     width: 30%;
     height: 80px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .nome-brano-footer {
     padding-top: 15px;
+    margin-left: 10px;
 }
 
 .central-section-footer {
@@ -330,10 +335,6 @@ h2 {
 .central-section-footer i {
     margin-right: 25px;
     font-size: 20px;
-}
-
-.fa-play-circle {
-    font-size: 30px;
 }
 
 .barra-canzone {
@@ -448,7 +449,8 @@ h2 {
 /*  RESPOSIVE */
 
 /* Smartphone di piccole dimensioni*/
-@media all and (min-width: 1px) and (max-width: 480px) {
+@media all and (min-width: 320px) and (max-width: 480px) {
+    /*  LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT  */
     .left-section {
         width: 50px;
     }
@@ -488,14 +490,13 @@ h2 {
         font-size: 12px;
         padding-left: 5px;
     }
-
+    /* RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT  */
     .right-section-overflow {
         width: calc(100% - 50px);
     }
     
     .top-right-section-fixed{
         width: calc(100% - 50px);
-
     }
 
     .button-upgrade {
@@ -514,7 +515,7 @@ h2 {
     h2 {
         font-size: 20px;
     }
-
+    /* MENU MAIN-MENUMAIN-MENU MAIN */
     .nav-main {
         width: 100%; 
         display: flex;
@@ -549,11 +550,10 @@ h2 {
     .description p{
         font-size: 14px;
     }
-
+    /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER  */
     .bottom-section img {
-        height: 30%;
-       margin-bottom: 10px;
-       vertical-align:middle;
+        height: 50%;
+        margin-bottom: 10px;
     }
 
     .bottom-section {
@@ -566,9 +566,10 @@ h2 {
     }
 
     .first-section-footer {
-        width: 21%;
+        width: 30%;
+        margin-top: 35px;
     }
-
+    
     .central-section-footer {
         width: 33%;
     }
@@ -612,9 +613,33 @@ h2 {
         font-size: 12px;
     }
 
+    .branogrey {
+        margin-bottom: 40px;
+    }
+
+    .fa-folder {
+        margin: 0;
+        position: relative;
+    }
+
+    .icone-first-section-footer {
+        position: relative;
+        bottom: 25px;
+    }
+
+    .fa-heart {
+        margin-bottom: 10px;
+        margin: 0;
+    }
+
+    .nome-brano-footer {
+        padding-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .third-section {
-        padding-top: 15px;
-        width: 33%;
+        width: 35%;
         text-align: left;
     }    
 
@@ -628,7 +653,7 @@ h2 {
 
     .barra-destra-footer {
         width: 80px;
-        margin: 0 0;
+        margin: 0;
     }
 } 
 
@@ -637,6 +662,7 @@ h2 {
     .left-section {
         width: 180px;
     }
+
     .button-installa-app {
         font-size: 13px;
     }
@@ -753,6 +779,10 @@ h2 {
         font-size: 12px;
     }
 
+    .fa-folder {
+        
+    }
+
     .third-section {
         width: 40%;
         text-align: right;
@@ -841,4 +871,3 @@ h2 {
     }
       
 }
-
