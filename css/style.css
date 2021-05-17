@@ -280,10 +280,12 @@ h2 {
     position: fixed;
     left: 0;
     bottom: 0;
+    z-index: 2;
 }
 
 .icone-first-section-footer {
     margin-top: 30px;
+    display: flex;
 }
 
 .row-footer {
@@ -444,12 +446,162 @@ h2 {
     margin: 0 10px;
 }
 
+.xxs-none {
+     display: none;
+}
 
 
 /*  RESPOSIVE */
 
 /* Smartphone di piccole dimensioni*/
-@media all and (min-width: 320px) and (max-width: 480px) {
+@media all and (min-width: 1px) and (max-width: 359px) {
+    
+    /*  LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT  */
+    .left-section {
+        display: none;
+    }
+
+    /* RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT  */
+    .right-section-overflow {
+        width: 100%;
+    }
+    
+    .top-right-section-fixed{
+        display: none;
+    }
+
+    .nav-right-section {
+        display: none;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+   
+    .main-section {
+        padding-top: 0;
+        margin-bottom: 10px;
+    }
+     
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .album-section {
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
+
+    .card {
+     float: left;
+     width: calc(100% / 2);
+     min-height: 260px;
+     text-align: left;
+    }
+
+    .sm {
+        min-height: 180px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .description p{
+        font-size: 18px;
+    }
+
+
+    /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER  */
+    .bottom-section {
+        display: flex;
+        align-content: center;
+    }
+
+    .bottom-section img {
+        display: none;
+    }
+
+    .barra-destra-footer {
+        display: none;
+    }
+
+    .barra-canzone {
+        display: none;
+    }
+
+    .first-section-footer {
+        width: 50%;
+        margin-top: 20px;
+        display: flex;
+    }
+    
+    .central-section-footer {
+        width: 80%;
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .central-section-footer i {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+    
+    .central-section-footer span {
+        font-size: 8px;
+    }
+
+    .barra-centrale-footer {
+        display: none;
+    }
+    
+    .barra-canzone .barra-verde {
+        display: none;
+        
+    }
+
+    .fa-play-circle {
+        font-size: 30px;
+    }
+
+    .brano {
+        font-size: 16px;
+    }
+
+    .branogrey {
+        margin-bottom: 40px;
+    }
+
+    .icone-first-section-footer {
+        display: none;
+    }
+
+    .nome-brano-footer {
+        padding-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+
+    .third-section {
+        display: none;
+    }    
+
+    .icon-hover {
+        font-size: 11px;
+    }
+
+    .fa-desktop {
+        margin: 0 5px;
+    }
+
+    .xxs {
+        color: #282828;
+    }
+} 
+
+@media all and (min-width: 360px) and (max-width: 519px) {
     /*  LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT  */
     .left-section {
         width: 50px;
@@ -619,18 +771,20 @@ h2 {
 
     .fa-folder {
         margin: 0;
-        position: relative;
     }
 
     .icone-first-section-footer {
         position: relative;
         bottom: 25px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .fa-heart {
         margin-bottom: 10px;
         margin: 0;
     }
+
 
     .nome-brano-footer {
         padding-top: 5px;
@@ -658,7 +812,7 @@ h2 {
 } 
 
 /* Smartphone di grandi dimensioni*/
-@media all and (min-width: 481px) and (max-width: 736px) {
+@media all and (min-width: 520px) and (max-width: 736px) {
     .left-section {
         width: 180px;
     }
@@ -779,10 +933,6 @@ h2 {
         font-size: 12px;
     }
 
-    .fa-folder {
-        
-    }
-
     .third-section {
         width: 40%;
         text-align: right;
@@ -870,4 +1020,10 @@ h2 {
         width: 80px;
     }
       
+}
+
+@media screen and (max-height:350px){
+    .button-upgrade {
+        display: none;
+    }
 }
