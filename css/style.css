@@ -1023,7 +1023,7 @@ h2 {
 }
 
 @media screen and (max-height:350px){
-    .button-upgrade {
+    .top-right-section-fixed {
         display: none;
     }
 }
